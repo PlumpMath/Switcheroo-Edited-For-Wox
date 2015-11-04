@@ -23,7 +23,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
-using System.Runtime.Caching;
+//using System.Runtime.Caching;
 using System.Runtime.InteropServices;
 using System.Text;
 using ManagedWinapi.Windows;
@@ -39,6 +39,9 @@ namespace Switcheroo.Core
         {
             get
             {
+
+                //Commented out until Wox updates to 4.5
+                /*
                 var key = "ProcessTitle-" + HWnd;
                 var processTitle = MemoryCache.Default.Get(key) as string;
                 if (processTitle == null)
@@ -47,6 +50,8 @@ namespace Switcheroo.Core
                     MemoryCache.Default.Add(key, processTitle, DateTimeOffset.Now.AddHours(1));
                 }
                 return processTitle;
+                */
+                return Process.ProcessName;
             }
         }
 
