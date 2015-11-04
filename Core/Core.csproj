@@ -35,12 +35,10 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
@@ -62,6 +60,7 @@
     <Compile Include="FilterResult.cs" />
     <Compile Include="WinApi.cs" />
     <Compile Include="WindowIconFinder.cs" />
+    <Compile Include="Workarounds.cs" />
     <Compile Include="XamlHighlighter.cs" />
   </ItemGroup>
   <ItemGroup>
